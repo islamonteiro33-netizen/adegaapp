@@ -1,27 +1,22 @@
-workflows:
-  android-apk:
-    name: Chama Bebidas Adega APK
-    max_build_duration: 60
-    instance_type: mac_mini_m2
-
-    environment:
-      node: 20
-      java: 17
-
-    scripts:
-      - name: Instalar dependências
-        script: |
-          npm install
-
-      - name: Gerar projeto Android
-        script: |
-          npx expo prebuild --platform android --clean
-
-      - name: Gerar APK release
-        script: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleRelease
-
-    artifacts:
-      - android/app/build/outputs/**/*.apk
+{
+  "name": "chamabebidas-adega",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android"
+  },
+  "dependencies": {
+    "expo": "~51.0.28",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "@react-native-async-storage/async-storage": "1.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@types/react": "~18.2.79",
+    "typescript": "~5.3.3"
+  }
+}

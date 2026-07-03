@@ -1,0 +1,10 @@
+# Correção Adega GitHub
+
+Envie estes arquivos para a raiz do repositório no GitHub:
+
+- app.json
+- icon.png
+- adaptive-icon.png
+- splash.png
+
+Essa correção deixa o app.json apontando para as imagens na raiz do projeto.

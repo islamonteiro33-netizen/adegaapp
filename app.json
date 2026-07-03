@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Chama Bebidas Adega",
+    "slug": "chamabebidas-adega",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111111"
+    },
+    "android": {
+      "package": "com.chamabebidas.adega",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./adaptive-icon.png",
+        "backgroundColor": "#111111"
+      },
+      "permissions": [
+        "INTERNET"
+      ]
+    },
+    "extra": {
+      "apiUrl": "https://chamabebidas.com.br/api"
+    }
+  }
+}
